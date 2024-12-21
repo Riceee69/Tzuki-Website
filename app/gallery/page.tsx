@@ -30,7 +30,7 @@ export default function GalleryPage() {
     <main className="min-h-screen bg-[#FFFEFE] pb-16 pt-20">
       <PageHeader 
         title="Tuzi Gallery"
-        description="Explore the magical world of Tuzi through our collection of enchanting bunnies, their unique personalities."
+        description="Explore the magical world of Tuzi through our collection of enchanting bunnies,and their unique personalities."
       />
       
       <section className="container mx-auto px-4 mt-8">
