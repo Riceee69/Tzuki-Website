@@ -3,19 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --tuzi-red: 198, 49, 67;    /* #C63143 */
+  --tuzi-brown: 113, 65, 0;   /* #714100 */
+  --tuzi-white: 255, 254, 254; /* #FFFEFE */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-[#FFFEFE] text-[#714100];
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.fade-scroll {
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
+
